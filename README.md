@@ -72,6 +72,6 @@ Este proyecto fue desarrollado por:
 
 ## **Pagina del Proyecto** ✅
 
-- [AluraGeek](https://leo-apu.github.io/AluraGeek/) 
+- [AluraGeek](alura-geek-lvc-2024.vercel.app/) 
 
 ---
