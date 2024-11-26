@@ -1,4 +1,5 @@
-const URLAPI = "http://localhost:3001/products";
+// const URLAPI = "http://localhost:3001/products";
+const URLAPI = "https://674520f8b4e2e04abea4cc3e.mockapi.io/api/v1/productos"
 
 // Obtener la lista de productos
 const productsList = async () => {
