@@ -1,0 +1,295 @@
+*,
+*::before,
+*::after {
+  --dark-purple: #8c0375;
+  --medium-purple: #c004d9;
+  --ligth-purple: #9303a6;
+  --medium-blue: #5d04d9;
+  --dark-blue: #03318c;
+  --white: #ffffff;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Press Start 2P", "IBM Plex Mono", monospace;
+  font-weight: 300;
+  font-style: normal;
+  background-color: var(--white);
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+  font-size: 14px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.scrollbar {
+  scroll-behavior: smooth;
+  overflow: auto;
+}
+.scrollbar::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+.scrollbar::-webkit-scrollbar-track {
+  background: #e4eaea;
+  border-radius: 0.208vw;
+  opacity: 0.9;
+  width: 5px;
+  border-radius: 10px;
+}
+.scrollbar::-webkit-scrollbar-thumb {
+  background: var(--ligth-purple);
+  border-radius: 10px;
+  opacity: 0.9;
+  width: 5px;
+}
+
+.geek__nav {
+  background-color: var(--medium-blue);
+  height: 6rem;
+  width: 100%;
+  margin-bottom: 4.5625rem;
+  -webkit-box-shadow: 0px 11px 5px 0px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 0px 11px 5px 0px rgba(0, 0, 0, 1);
+  box-shadow: 0px 7px 0.9px 0px #00000040;
+}
+.geek__logo--figure {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: white;
+}
+.geek__logo--figure figcaption {
+  font-size: 1.5rem;
+}
+
+.easeIn {
+  animation: 6s ease-in 0s infinite beat;
+}
+
+@keyframes beat {
+  0%,
+  50%,
+  100% {
+    transform: scale(1, 1);
+  }
+  30%,
+  80% {
+    transform: scale(0.7, 0.7);
+  }
+}
+.geek__container {
+  padding: 0 0.5rem;
+  margin-bottom: 7rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.section__form {
+  margin-bottom: 4.5rem;
+  padding: 0 2rem 16px;
+  max-width: 472px;
+  border-bottom: 1px solid var(--dark-blue);
+}
+.section__title {
+  font-size: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+.geek__input {
+  border: 3px solid var(--dark-blue);
+  border-radius: 1.875rem;
+  height: 3.625rem;
+  padding: 0.79rem;
+  width: 100%;
+  font-family: "ibm plex mono";
+  margin-bottom: 2.5rem;
+}
+.geek__input::placeholder {
+  color: var(--dark-blue);
+  font-weight: 600;
+}
+.geek__input:focus {
+  border: 3px solid var(--medium-blue);
+  -webkit-box-shadow: 6px 6px 5px 0px rgba(186, 186, 186, 1);
+  -moz-box-shadow: 6px 6px 5px 0px rgba(186, 186, 186, 1);
+  box-shadow: 6px 6px 5px 0px rgba(186, 186, 186, 1);
+  outline: none;
+  transform: scale(102%);
+}
+.error-message {
+  color: red;
+  font-size: 8px; 
+  margin-bottom: 5px;
+  text-align: left;
+  padding-left: 10px;
+  display: block;
+}
+
+.geek__button {
+  background-color: var(--dark-blue);
+  color: var(--white);
+  border-radius: 0.9375rem;
+  min-width: 10.25rem;
+  font-family: "ibm plex mono";
+  height: 55px;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.625rem;
+  margin-bottom: 0.625rem;
+}
+.geek__button:hover {
+  background-color: var(--medium-blue);
+  transform: scale(103%);
+  -webkit-box-shadow: 6px 6px 5px 0px rgba(186, 186, 186, 1);
+  -moz-box-shadow: 6px 6px 5px 0px rgba(186, 186, 186, 1);
+  box-shadow: 6px 6px 5px 0px rgba(186, 186, 186, 1);
+}
+.geek__button:disabled {
+  background-color: gray;
+}
+.geek__button--outline {
+  background-color: var(--white);
+  border: 0.1875rem solid var(--dark-blue);
+  color: var(--dark-blue);
+}
+.geek__button--outline:hover {
+  background-color: var(--dark-blue);
+  color: var(--white);
+  transform: scale(103%);
+}
+.geek__products {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.geek__card {
+  width: 12.25rem;
+  height: 16.125rem;
+  background-color: var(--medium-blue);
+  color: var(--white);
+  font-family: "ibm plex mono";
+  padding: 0.625rem;
+  border: 0.1875rem solid var(--dark-blue);
+  border-radius: 0.625rem;
+}
+.geek__card:hover {
+  -webkit-box-shadow: 6px 6px 5px 0px rgba(186, 186, 186, 1);
+  -moz-box-shadow: 6px 6px 5px 0px rgba(186, 186, 186, 1);
+  box-shadow: 6px 6px 5px 0px rgba(186, 186, 186, 1);
+  transform: scale(103%);
+}
+.card__figure {
+  text-align: left;
+}
+.card__figure--img {
+  min-width: 11rem;
+  min-height: 10.875rem;
+  width: 11rem;
+  height: 10.875rem;
+  border-radius: 10px;
+  background-color: var(--medium-blue);
+  border: 0.1875rem solid black;
+}
+.card__figure img,
+figcaption {
+  margin-bottom: 0.625rem;
+}
+.card__figure figcaption {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.container__delete {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 24px;
+}
+.container__delete strong {
+  font-size: 1rem;
+  font-weight: 700;
+  height: 100%;
+}
+.bottom--deleted {
+  height: 24px;
+  width: 24px;
+}
+
+.bottom--deleted img {
+  height: 24px;
+  width: 24px;
+  margin-bottom: 0;
+}
+.bottom--deleted img:hover {
+  transform: scale(1.2);
+}
+.geek__footer {
+  background-color: var(--medium-blue);
+  padding: 2rem 1.75rem;
+}
+.geek__footer figure {
+  flex-wrap: wrap;
+}
+.geek__footer div {
+  width: 100%;
+}
+.geek__footer p {
+  font-family: "ibm plex mono";
+  font-size: 16px;
+  margin-bottom: 0.625rem;
+  font-weight: 200;
+}
+
+.geek__links {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  gap: 15px;
+}
+.link__img img {
+  height: 24px;
+  width: 24px;
+}
+.link__img:hover {
+  transform: scale(105%);
+}
+
+@media (min-width: 768px) {
+  .geek__container {
+    padding: 0 5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+  }
+  .geek__logo--figure div {
+    width: 100%;
+  }
+  .section__form {
+    order: 2;
+    border-bottom: none;
+    border-left: 1px solid var(--dark-blue);
+  }
+  .section__form h2 {
+    max-width: 392px;
+    padding: 0 35px;
+  }
+  .geek__products {
+    padding: 25px 15px;
+    max-width: 678px;
+    box-shadow: -12px 10px 5.8px 0px #00000040;
+    justify-content: left;
+    row-gap: 75px;
+    height: 50vh;
+    line-height: 1em;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 100%;
+  }
+}

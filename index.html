@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <title>Alura Geek</title>
+  </head>
+  <body class="scrollbar">
+    <nav class="geek__nav">
+      <figure class="geek__logo--figure ">
+        <img src="./assets/image 1.svg" alt="logo" />
+        <figcaption>AluraGeek</figcaption>
+      </figure>
+    </nav>
+    <div class="geek__container">
+      <section class="section__form">
+        <h2 class="section__title">Agregar producto:</h2>
+        <form  id="form-product">
+          <span id="name-error" class="error-message"></span>
+          <input id="form-name" class="geek__input" type="text" placeholder="nombre..." />
+          <span id="cost-error" class="error-message"></span>
+          <input id="form-cost" class="geek__input" type="text" placeholder="precio..." />
+          <span id="image-error" class="error-message"></span>
+          <input id="form-image" class="geek__input" type="text" placeholder="imagen..." />
+          <button class="geek__button" type="submit" disabled>Enviar</button>
+          <button class="geek__button geek__button--outline" type="button" id="clear-button">Limpiar</button>
+        </form>
+      </section>
+      <section class="section__products">
+        <h2 class="section__title">MIS PRODUCTOS:</h2>
+        <div class="geek__products scrollbar" data-products id="data-products">
+        </div>
+      </section>
+    </div>
+    <footer class="geek__footer">
+      <figure class="geek__logo--figure">
+        <img src="./assets/image 1.svg" alt="logo" />
+        <figcaption>AluraGeek</figcaption>
+        <div>
+          <P>DESARROLLADO POR LEANDRO CRUZ</P>
+          <ul class="geek__links">
+            <li class="link__img">
+              <a href="https://github.com/Leo-apu" target="_blank"
+                > <img src="./assets/github.svg" alt="Github"
+              /></a>
+            </li>
+            <li class="link__img">
+              <a href="https://www.linkedin.com/in/" target="_blank" 
+                > <img src="./assets/linkedin.svg" alt="Linkedin"
+              /></a>
+            </li>
+            <li class="link__img">
+              <a href="https://www.instagram.com/" target="_blank"
+                > <img src="./assets/instagram.svg" alt="Instagram"
+              /></a>
+            </li>
+         
+          </ul>
+          <P>@Alura-Latam  2024</P>
+        </div>
+        </div>
+      </figure>
+    </footer>
+
+    
+  </body>
+</html>
