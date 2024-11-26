@@ -2,20 +2,68 @@
     "products": [
         {
             "id": 1,
-            "name": "Product 1",
-            "image": "https://via.placeholder.com/150",
+            "name": "Super Mario Bros",
+            "image": "https://www.vidrieraonline.com.ar/img-load/img/221/260/1/bf232372187476bd5b8146e467fa85dc.jpg",
             "price": 100
         },
         {
             "id": 2,
-            "name": "Product 2",
-            "image": "https://via.placeholder.com/150",
+            "name": "Dragon Ball Zero",
+            "image": "https://www.vidrieraonline.com.ar/img-load/img/221/260/1/db325debc9f5207b24faf6d6cd93f36f.jpg",
             "price": 200
         },
         {
             "id": 3,
-            "name": "Product 3",
-            "image": "https://via.placeholder.com/150",
+            "name": "Silent Hill 2",
+            "image": "https://www.vidrieraonline.com.ar/img-load/img/221/260/1/c47e6fcb58178824f37f28daba24a9a3.jpg",
+            "price": 300
+        },
+        {
+            "id": 4,
+            "name": "Call of Duty",
+            "image": "https://www.vidrieraonline.com.ar/img-load/img/221/260/1/918f5cd5a5c0d48671d4d4fc54bab2e9.jpg",
+            "price": 100
+        },
+        {
+            "id": 5,
+            "name": "Marvel Spiderman",
+            "image": "https://www.vidrieraonline.com.ar/img-load/img/221/260/1/7b71096a076eca8eacf1ffc04f76d2b9.jpg",
+            "price": 100
+        },
+        {
+            "id": 6,
+            "name": "Tekken 7",
+            "image": "https://www.vidrieraonline.com.ar/img-load/img/221/260/1/c9326f7c1d4caa281c20622b0c1d3b24.jpg",
+            "price": 200
+        },
+        {
+            "id": 7,
+            "name": "Resident Evil",
+            "image": "https://www.vidrieraonline.com.ar/img-load/img/221/260/1/c5c6a2c2c5777ff2b320eb37fe4d0781.jpg",
+            "price": 300
+        },
+        {
+            "id": 8,
+            "name": "God of War",
+            "image": "https://www.vidrieraonline.com.ar/img-load/img/221/260/1/bad5f33780c42f2588878a9d07405083.jpg",
+            "price": 100
+        }, 
+        {
+            "id": 9,
+            "name": "Mortals Kombat",
+            "image": "https://www.vidrieraonline.com.ar/img-load/img/221/260/1/a50abba8132a77191791390c3eb19fe7.jpg",
+            "price": 100
+        },
+        {
+            "id": 10,
+            "name": "Gran Turismo",
+            "image": "https://www.vidrieraonline.com.ar/img-load/img/221/260/1/796eb50a93f0f090063f36d64268dd97.jpg",
+            "price": 200
+        },
+        {
+            "id": 11,
+            "name": "Assassins Creed",
+            "image": "https://www.vidrieraonline.com.ar/img-load/img/221/260/1/73a0e305fdc6770f872182b5c79b7cba.jpg",
             "price": 300
         }
     ]
