@@ -14,6 +14,52 @@ const errorMessages = {
   image: document.querySelector("#image-error"),
 };
 
+const searchInput = document.querySelector("#search-input");
+const searchButton = document.querySelector("#search-button");
+const clearSearchButton = document.querySelector("#clear-button-search");
+
+function clearSearch () {
+  searchInput.value = "";
+  filterProducts("");
+}
+
+function filterProducts(searchTerm) {
+  const products = document.querySelectorAll(".geek__card");
+  products.forEach(product => {
+    const productName = product.querySelector("figcaption").textContent.toLowerCase();
+    if (productName.includes(searchTerm.toLowerCase())) {
+      product.style.display = "block";
+    } else {
+      product.style.display = "none";
+    }
+  });
+  const filteredProducts = document.querySelectorAll(".geek__card:not([style*='display: none'])");
+ if (filteredProducts.length === 0) {
+    const noResults = document.createElement("div");
+    noResults.innerHTML = `
+    <h2>No se encontraron productos con ese nombre.</h2>
+    <br>
+    <p>Intenta con otro nombre o limpia el campo de busqueda.</p>
+    `
+    ;
+    productContainer.appendChild(noResults);
+  }
+}
+
+searchButton.addEventListener("click", () => {
+  filterProducts(searchInput.value);
+});
+
+searchInput.addEventListener("keyup", (e) => {
+  if (e.key === "Enter") {
+    filterProducts(searchInput.value);
+  }
+});
+
+clearSearchButton.addEventListener("click", () => {
+  clearSearch();
+});
+
 // Validaciones de campos con mensajes de error
 const validations = {
   isNameValid: () => {

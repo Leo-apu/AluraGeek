@@ -6,7 +6,7 @@ Este es un proyecto desarrollado como parte del Challenge de Alura, llamado **Al
 
 ## **Descripción del Proyecto** 📋
 
-AluraGeek es una aplicación web diseñada para ofrecer una experiencia moderna y amigable para los usuarios que deseen navegar por un catálogo de videojuegos. El sitio permite gestionar productos, incluyendo su creación y eliminación, lo que lo convierte en una herramienta completa para administradores y clientes.
+AluraGeek es una aplicación web diseñada para ofrecer una experiencia moderna y amigable para los usuarios que deseen navegar por un catálogo de videojuegos. El sitio permite gestionar productos, incluyendo su creación, busqueda y eliminación, lo que lo convierte en una herramienta completa para administradores y clientes.
 
 El proyecto sigue prácticas de desarrollo profesional y usa tecnologías modernas para asegurar calidad y funcionalidad.
 
@@ -18,7 +18,7 @@ El proyecto sigue prácticas de desarrollo profesional y usa tecnologías modern
   Los usuarios pueden explorar los productos disponibles desde la página de inicio.
 
 - **Gestión de productos:**  
-  Los administradores pueden agregar y eliminar productos directamente desde la aplicación.
+  Los administradores pueden agregar, buscar y eliminar productos directamente desde la aplicación.
 
 - **Notificaciones interactivas:**  
   Utilización de modales con SweetAlert2 para confirmar acciones como crear o eliminar productos.
@@ -36,6 +36,13 @@ El proyecto sigue prácticas de desarrollo profesional y usa tecnologías modern
 2. **Administración de productos (para administradores):**  
    - Crear: Ingresar los datos de un nuevo producto en el formulario y agregarlo al catálogo.
    - Eliminar: Remover productos no deseados del catálogo.
+
+3. **Busqueda de productos:**
+   - Ingresar el nombre de un producto en el campo de busqueda y presionar "Buscar".
+   - Ver los resultados de la busqueda en la pantalla.
+   - Los resultados se muestran en forma de tarjetas con informacion relevante.
+   - Si no se encuentran resultados, se muestra un mensaje de "No se encontraron productos con ese nombre."
+   - se puede limpiar la busqueda y se muestran todos los productos nuevamente.
 
 
 ---
