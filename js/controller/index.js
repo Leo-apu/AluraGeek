@@ -35,7 +35,7 @@ const validations = {
     const valid = urlPattern.test(imageInput.value);
     errorMessages.image.textContent = valid
       ? ""
-      : "La URL debe ser válida y terminar en .png, .jpg, etc.";
+      : "La URL debe ser válida y terminar en .png, .jpg";
     return valid;
   },
 };
@@ -91,25 +91,52 @@ async function createProduct() {
       imageInput.value.trim(),
       costInput.value.trim()
     );
-    alert("Producto creado correctamente");
+    await Swal.fire({
+      icon: "success",
+      title: "Producto creado correctamente",
+      showConfirmButton: true,
+      timer : 10000 ,
+    });
     clearForm();
     renderProducts();
   } catch (error) {
-    alert("Error al crear producto: " + error.message);
+    Swal.fire({
+      icon: "error",
+      title: "Error al crear producto",
+      text: error.message || "Inténtalo nuevamente",
+    });
   }
 }
 
 // Eliminar producto
 async function deleteProductHandler(productId) {
-  const confirmDelete = window.confirm("¿Estás seguro de que quieres eliminar este producto?");
-  if (confirmDelete) {
+  const confirmDelete = await Swal.fire({
+    title: "¿Estás seguro?",
+    text: "No podrás revertir esta acción",
+    icon: "warning",
+    showCancelButton: true,
+    confirmButtonColor: "#3085d6",
+    cancelButtonColor: "#d33",
+    confirmButtonText: "Sí, eliminar",
+    cancelButtonText: "Cancelar",
+  });
+
+  if (confirmDelete.isConfirmed) {
     try {
       await productServices.deleteProduct(productId);
-      alert("Producto eliminado correctamente");
+      await Swal.fire({
+        icon: "success",
+        title: "Producto eliminado correctamente",
+        showConfirmButton: true,
+        timer : 10000,
+      });
       renderProducts();
     } catch (error) {
-      console.error("Error eliminando producto:", error);
-      alert("Hubo un error al eliminar el producto");
+      Swal.fire({
+        icon: "error",
+        title: "Error al eliminar producto",
+        text: error.message || "Inténtalo nuevamente",
+      });
     }
   }
 }
@@ -129,4 +156,3 @@ clearButton.addEventListener("click", clearForm);
 submitButton.disabled = true;
 
 renderProducts();
-
